@@ -1,115 +1,110 @@
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: greenyellow;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: greenyellow;
 }
 
-#board{
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px 100px;
-    cursor: pointer;
-     position: relative;
-   
+#board {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  cursor: pointer;
+  position: relative;
 }
-.tile{
-    
-    color: rgb(2, 75, 2);
-    /* margin: 10px;
+.tile {
+  color: rgb(2, 75, 2);
+  /* margin: 10px;
     background-color: aqua; */
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.right__border{
-     
-    border-right: 2px  solid rebeccapurple;
+.right__border {
+  border-right: 2px solid rebeccapurple;
 }
-.bottom__border{
-    border-bottom: 2px  solid rebeccapurple;
+.bottom__border {
+  border-bottom: 2px solid rebeccapurple;
 }
-.strike{
-    position: absolute;
-    background-color: brown;
+.strike {
+  position: absolute;
+  background-color: brown;
 }
-.strike-row-1{
-    width: 100%;
-    height: 4px;
-    top: 15%;
+.strike-row-1 {
+  width: 100%;
+  height: 4px;
+  top: 15%;
 }
-.strike-row-2{
-    width: 100%;
-    height: 4px;
-    top: 48%;
+.strike-row-2 {
+  width: 100%;
+  height: 4px;
+  top: 48%;
 }
-.strike-row-3{
-    width: 100%;
-    height: 4px;
-    top: 83%;
+.strike-row-3 {
+  width: 100%;
+  height: 4px;
+  top: 83%;
 }
-.strike-column-1{
-    height:  100%;
-    width:  4px;
-    left: 15%;
+.strike-column-1 {
+  height: 100%;
+  width: 4px;
+  left: 15%;
 }
-.strike-column-2{
-   height:  100%;
-    width:  4px;
-    left: 48%;
+.strike-column-2 {
+  height: 100%;
+  width: 4px;
+  left: 48%;
 }
-.strike-column-3{
-    height:  100%;
-    width:  4px;
-    left: 83%;
+.strike-column-3 {
+  height: 100%;
+  width: 4px;
+  left: 83%;
 }
-.strike-diagonal-1{
-    height:  4px;
-    width: 90%;
-    top: 50%;
-    left: 5%;
-    transform: skewY(45deg);
+.strike-diagonal-1 {
+  height: 4px;
+  width: 90%;
+  top: 50%;
+  left: 5%;
+  transform: skewY(45deg);
 }
-.strike-diagonal-2{
-    height:  4px;
-    width: 90%;
-    top: 50%;
-    left: 5%;
-    transform: skewY(-45deg);
+.strike-diagonal-2 {
+  height: 4px;
+  width: 90%;
+  top: 50%;
+  left: 5%;
+  transform: skewY(-45deg);
 }
-#game-over-area{
-    text-align: center;
-    border: indigo 8px solid;
-    padding: 50px;
-    width: 10%;
-    margin-top: 50px;
+#game-over-area {
+  text-align: center;
+  border: indigo 8px solid;
+  padding: 50px;
+  width: 20%;
+  margin-top: 50px;
 }
-h2{
-    color: rgb(2, 75, 2);
-    font-size: 50px;
-    margin-top: 0px;
+h2 {
+  color: rgb(2, 75, 2);
+  font-size: 50px;
+  margin-top: 0px;
 }
-button{
-    background-color: transparent;
-    color: rgb(2, 75, 2);
-    border: rgb(2, 75, 2) 2px solid;
-    padding: 10px;
-    font-size: 28px;
+button {
+  background-color: transparent;
+  color: rgb(2, 75, 2);
+  border: rgb(2, 75, 2) 2px solid;
+  padding: 10px;
+  font-size: 28px;
 }
-.hidden{
-    display: none;
-
-
+.hidden {
+  display: none;
 }
-.visible{
-    display: block;
+.visible {
+  display: block;
 }
-.x-hover:hover::after{
-    content: "X";
-    opacity: 0.4;
+.x-hover:hover::after {
+  content: 'X';
+  opacity: 0.4;
 }
-.o-hover:hover::after{
-    content: "O";
-opacity: 0.4;
+.o-hover:hover::after {
+  content: 'O';
+  opacity: 0.4;
 }

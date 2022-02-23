@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+    <link href="./css/normalize.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>TIC TAC TOE</h1>
+    <div id="board">
+      <div data-index="1" class="tile right__border bottom__border"></div>
+      <div data-index="2" class="tile right__border bottom__border"></div>
+      <div data-index="3" class="tile bottom__border"></div>
+      <div data-index="4" class="tile right__border bottom__border"></div>
+      <div data-index="5" class="tile right__border bottom__border"></div>
+      <div data-index="6" class="tile bottom__border"></div>
+      <div data-index="7" class="tile right__border "></div>
+      <div data-index="8" class="tile right__border "></div>
+      <div data-index="9" class="tile"></div>
+      <div id="strike" class="strike"></div>
+    </div>
+    <div id="game-over-area" class="hidden">
+        <h2 id="game-over-text">Winner is X</h2>
+        <button id="play-again">Play Again</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
